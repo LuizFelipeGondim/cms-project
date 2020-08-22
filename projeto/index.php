@@ -118,6 +118,96 @@
                 </div>
             </div>
         </section>
+
+        <section class="equipe">
+            <h2>Equipe</h2>
+            <div class="container equipe-container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="equipe-single">
+                            <div class="col-md-12 equipe-top">
+                                <div class="user-picture"></div>
+                                <h3>Luiz Felipe</h3>
+                            </div>
+                            <div class="col-md-12 content">
+                                <p>Praesent at nisi nunc. Curabitur mollis dolor eget aliquet tincidunt. Suspendisse 
+                                    scelerisque felis turpis, vel commodo justo vestibulum ac. Nullam interdum congue 
+                                    gravida. Pellentesque imperdiet sem vitae mauris pretium suscipit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="equipe-single">
+                            <div class="col-md-12 equipe-top">
+                                <div class="user-picture"></div>
+                                <h3>Luiz Felipe</h3>
+                            </div>
+                            <div class="col-md-12 content">
+                                <p>Praesent at nisi nunc. Curabitur mollis dolor eget aliquet tincidunt. Suspendisse 
+                                    scelerisque felis turpis, vel commodo justo vestibulum ac. Nullam interdum congue 
+                                    gravida. Pellentesque imperdiet sem vitae mauris pretium suscipit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="equipe-single">
+                            <div class="col-md-12 equipe-top">
+                                <div class="user-picture"></div>
+                                <h3>Luiz Felipe</h3>
+                            </div>
+                            <div class="col-md-12 content">
+                                <p>Praesent at nisi nunc. Curabitur mollis dolor eget aliquet tincidunt. Suspendisse 
+                                    scelerisque felis turpis, vel commodo justo vestibulum ac. Nullam interdum congue 
+                                    gravida. Pellentesque imperdiet sem vitae mauris pretium suscipit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="equipe-single">
+                            <div class="col-md-12 equipe-top">
+                                <div class="user-picture"></div>
+                                <h3>Luiz Felipe</h3>
+                            </div>
+                            <div class="col-md-12 content">
+                                <p>Praesent at nisi nunc. Curabitur mollis dolor eget aliquet tincidunt. Suspendisse 
+                                    scelerisque felis turpis, vel commodo justo vestibulum ac. Nullam interdum congue 
+                                    gravida. Pellentesque imperdiet sem vitae mauris pretium suscipit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Fale conosco</h2>
+                        <form method="post">
+                            <div class="form-group">
+                                <label for="nome">Nome: </label>
+                                <input type="text" name="nome" id="nome" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">E-mail: </label>
+                                <input type="email" name="email" id="email" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem: </label>
+                               <textarea name="mensagem" id="mensagem" cols="30" rows="10" class="form-control"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-default">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </div><!-- box -->
 
     <!-- Optional JavaScript -->
