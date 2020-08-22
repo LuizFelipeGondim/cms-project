@@ -1,10 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* bootstrap logo */
+.navbar-brand{
+    font-size: 23px;
 }
-
-
+/*----------------*/
 
 .box{
     position: relative;
@@ -54,4 +52,59 @@ section.banner > .container{
     display: inline-block;
     background-color: #26a599;
     border-radius: 3px;
+}
+
+section.cadastro-lead{
+    background-color: #26a599;
+    padding: 20px 0px;
+}
+
+section.cadastro-lead h2{
+    color: #ffffff;
+    font-size: 24px;
+    margin-top: 5px !important;
+}
+
+section.cadastro-lead form{
+    top: 10px;
+}
+
+section.cadastro-lead input[type=text]{
+    width:85%;
+    height: 40px;
+    padding-left: 8px;
+    border: 1px solid #ccc;
+}
+
+section.cadastro-lead input[type=submit]{
+    width: 15%;
+    height: 40px;
+    border: 1px solid #ccc;
+    margin-top: -5px;
+}
+
+section.depoimento h2{
+    color: #4b4b4b;
+}
+
+section.depoimento blockquote{
+    color: #4b4b4b;
+    font-size: 16px;
+}
+
+section.depoimento{
+    padding: 40px 0px;
+}
+
+section.diferenciais h2{
+    color: #4b4b4b;
+}
+
+section.diferenciais{
+    padding: 30px 0px;
+    background-color: rgb(225,225,225); 
+}
+
+.diferenciais-container{
+    margin-top: 50px;
 }
