@@ -179,7 +179,7 @@
             </div>
         </section>
 
-        <section class="footer">
+        <section class="final-page">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -197,18 +197,38 @@
 
                             <div class="form-group">
                                 <label for="mensagem">Mensagem: </label>
-                               <textarea name="mensagem" id="mensagem" cols="30" rows="10" class="form-control"></textarea>
+                                <textarea name="mensagem" id="mensagem" cols="30" rows="10" class="form-control"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-default">Enviar</button>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
                         </form>
                     </div>
                     <div class="col-md-6">
-
+                        <h2>Nossos planos</h2>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Plano Diário</th>
+                                    <th>Plano Semanal</th>
+                                    <th>Plano Anual</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>R$199,00</td>
+                                    <td>R$299,00</td>
+                                    <td>R$399,00</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </section>
     </div><!-- box -->
+
+    <footer>
+        <p class="text-center">Todos os direitos reservados</p>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
