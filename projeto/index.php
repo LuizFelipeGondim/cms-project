@@ -12,12 +12,14 @@
   </head>
   <body>
     <header>
-        <nav class="navbar mb-auto navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="#">Carousel</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Danki Code</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample07">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -26,13 +28,21 @@
                         <a class="nav-link" href="#">Link</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown07">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
                     </li>
                 </ul>
-                <form class="form-inline mt-2 mt-md-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <form class="form-inline my-2 my-md-0">
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
                 </form>
+                </div>
             </div>
         </nav>
     </header>
@@ -49,6 +59,64 @@
                     </div><!-- col-md-12 -->
                 </div><!-- row -->
             </div><!-- container -->
+        </section>
+
+        <section class="cadastro-lead">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-6">
+                        <h2> <span class="glyphicon glyphicon-start"></span> Entre em nossa lista!</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <form method="post">
+                            <input type="text" name="nome"><input type="submit" value="Enviar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="depoimento text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Depoimento</h2>
+                        <blockquote>
+                            Praesent at nisi nunc. Curabitur mollis dolor eget aliquet tincidunt. Suspendisse 
+                            scelerisque felis turpis, vel commodo justo vestibulum ac. Nullam interdum congue 
+                            gravida. Pellentesque imperdiet sem vitae mauris pretium suscipit. Suspendisse quis 
+                            fringilla tellus. Praesent iaculis quam hendrerit leo elementum, eget lobortis quam 
+                            malesuada. Proin convallis tristique sollicitudin. Sed a pharetra quam.
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="diferenciais text-center">
+            <h2>Conheça nossa empresa!</h2>
+            <div class="container diferenciais-container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>Diferencial #1</h3>
+                        <p>Praesent at nisi nunc. Curabitur mollis dolor eget aliquet tincidunt. Suspendisse 
+                            scelerisque felis turpis, vel commodo justo vestibulum ac. Nullam interdum congue 
+                            gravida. Pellentesque imperdiet sem vitae mauris pretium suscipit.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Diferencial #2</h3>
+                        <p>Praesent at nisi nunc. Curabitur mollis dolor eget aliquet tincidunt. Suspendisse 
+                            scelerisque felis turpis, vel commodo justo vestibulum ac. Nullam interdum congue 
+                            gravida. Pellentesque imperdiet sem vitae mauris pretium suscipit.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Diferencial #3</h3>
+                        <p>Praesent at nisi nunc. Curabitur mollis dolor eget aliquet tincidunt. Suspendisse 
+                            scelerisque felis turpis, vel commodo justo vestibulum ac. Nullam interdum congue 
+                            gravida. Pellentesque imperdiet sem vitae mauris pretium suscipit.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </div><!-- box -->
 
