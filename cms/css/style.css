@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(225,225,225);
+}
+
+
+nav.navbar a{
+    text-decoration: none;
+    color: #fff;   
+} 
+
+header#header{
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0px;
+}
+
+header#header p{
+    margin-top: 14px;
+}
+
+header#header h2{
+    margin-top: 8px;
+}
