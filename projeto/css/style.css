@@ -171,12 +171,12 @@ section.equipe h2{
 
 .user-picture{
     display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-color: #ccc;
-    border-radius: 50%;
 }
 
+.user-picture .icon-equipe{
+    font-size: 50px;
+    margin-top: 5px ;
+}
 /*------------------*/
 
 section.final-page{
