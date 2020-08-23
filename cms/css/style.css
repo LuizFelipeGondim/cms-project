@@ -2,16 +2,34 @@ body{
     background-color: rgb(225,225,225);
 }
 
+a{
+    text-decoration: none !important;
+}
 
-nav.navbar a{
-    text-decoration: none;
-    color: #fff;   
-} 
+/*---cor de fontes---*/
+.color-white{
+    color: #fff;
+}
+
+.color-white:hover{
+    color: #fff !important;
+}
+
+.color-black{
+    color:#333;
+}
+
+.color-black:hover{
+    color: #333;
+}
+
+/*-----------------*/
 
 header#header{
     background-color: #333;
     color: #fff;
     padding: 20px 0px;
+    margin-bottom: 20px;
 }
 
 header#header p{
@@ -20,4 +38,27 @@ header#header p{
 
 header#header h2{
     margin-top: 8px;
+}
+
+/*-----------------*/
+
+section.principal .col-md-3 .list-group{
+    margin-bottom: 20px;
+}
+
+section.principal .col-md-3 .list-group a:hover{
+    color:#333;
+}
+
+section.principal .card{
+    width: 100% !important;
+}
+
+section.principal .card{
+    margin-bottom: 20px;
+}
+
+section.principal textarea{
+    height: 140px;
+    resize: vertical;
 }
