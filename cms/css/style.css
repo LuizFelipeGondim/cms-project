@@ -4,6 +4,7 @@ body{
 
 a{
     text-decoration: none !important;
+    color: #333 ;
 }
 
 /*---cor de fontes---*/
@@ -15,13 +16,6 @@ a{
     color: #fff !important;
 }
 
-.color-black{
-    color:#333;
-}
-
-.color-black:hover{
-    color: #333;
-}
 
 /*-----------------*/
 
