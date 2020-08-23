@@ -12,7 +12,7 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">Danki Code</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
@@ -162,6 +162,8 @@
 
                 clickMenu();
 
+
+
                 function clickMenu(){
                     $('#menu-principal a, .list-group a').click(function(){
                         $('.list-group a').removeClass('bg-dark').removeClass('color-white');
@@ -177,7 +179,10 @@
                     $('#menu-principal a, .list-group a').click(function(){
                         var ref = '#'+$(this).attr('ref_sys')+'_section';
                         var offset = $(ref).offset().top;
-                        $('html,body').animate({'scrollTop':offset});
+                        $('html,body').animate({'scrollTop':offset-50});
+                        if($(window)[0].innerWidth <= 768){
+                            $('.navbar-toggler-icon').click();
+                        }
                     });
                 }
 
