@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -124,7 +127,11 @@
                     <div class="col-md-6">
                         <div class="equipe-single">
                             <div class="col-md-12 equipe-top">
-                                <div class="user-picture"></div>
+                                <div class="user-picture">
+                                    <span class="material-icons icon-equipe">
+                                        account_circle
+                                    </span>
+                                </div>
                                 <h3>Luiz Felipe</h3>
                             </div>
                             <div class="col-md-12 content">
@@ -137,7 +144,11 @@
                     <div class="col-md-6">
                         <div class="equipe-single">
                             <div class="col-md-12 equipe-top">
-                                <div class="user-picture"></div>
+                                <div class="user-picture">
+                                    <span class="material-icons icon-equipe">
+                                        account_circle
+                                    </span>
+                                </div>
                                 <h3>Luiz Felipe</h3>
                             </div>
                             <div class="col-md-12 content">
@@ -150,7 +161,11 @@
                     <div class="col-md-6">
                         <div class="equipe-single">
                             <div class="col-md-12 equipe-top">
-                                <div class="user-picture"></div>
+                                <div class="user-picture">
+                                    <span class="material-icons icon-equipe">
+                                        account_circle
+                                    </span>
+                                </div>
                                 <h3>Luiz Felipe</h3>
                             </div>
                             <div class="col-md-12 content">
@@ -163,7 +178,11 @@
                     <div class="col-md-6">
                         <div class="equipe-single">
                             <div class="col-md-12 equipe-top">
-                                <div class="user-picture"></div>
+                                <div class="user-picture">
+                                    <span class="material-icons icon-equipe">
+                                        account_circle
+                                    </span>
+                                </div>
                                 <h3>Luiz Felipe</h3>
                             </div>
                             <div class="col-md-12 content">
