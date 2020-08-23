@@ -1,3 +1,10 @@
+<?php
+    $pdo = new PDO('mysql:host=localhost;dbname=projeto_1', 'root', '');
+    $sobre = $pdo->prepare("SELECT * FROM `tb_sobre`");
+    $sobre->execute();
+    $sobre = $sobre->fetch()['sobre'];
+?>
+
 <!doctype html>
 <html lang="en">
     <head>
@@ -82,6 +89,24 @@
                         </div>
                     </div>
                     <div class="col-md-9">
+
+                        <?php if(isset($_POST['editar_sobre'])){
+                                $sobre = $_POST['sobre'];
+                                if($sobre === ''){
+                                    echo '<div class="alert alert-danger" role="alert"> Este campo não pode ficar vazio</div>';
+                                }else{
+                                    $pdo->exec("DELETE FROM `tb_sobre` ");
+                                    $sql = $pdo->prepare("INSERT INTO `tb_sobre` VALUES (null,?)");
+                                    $sql->execute(array($sobre));
+                                    echo '<div class="alert alert-info" role="alert"> O código HTML 
+                                        <b> Sobre </b> foi editado com sucesso</div>';
+                                    $sobre = $pdo->prepare("SELECT * FROM `tb_sobre`");
+                                    $sobre->execute();
+                                    $sobre = $sobre->fetch()['sobre'];
+                                }
+                            }
+                        ?>
+
                         <div class="card" style="width: 18rem;" id="sobre_section">
                             <div class="card-header bg-dark color-white">
                                 Sobre
@@ -91,9 +116,12 @@
                                     <form method="post" class="col-md-12">
                                         <div class="form-group">
                                             <label for="textarea">Código HTML: </label>
-                                            <textarea name="" id="textarea" class="form-control"></textarea>
+                                            <textarea name="sobre" id="textarea" class="form-control">
+                                                <?php echo $sobre; ?>
+                                            </textarea>
                                         </div>
-                                        <button type="submit" class="btn btn-primary">Enviar</button>
+                                        <input type="hidden" name="editar_sobre" value="">
+                                        <button type="submit" name="acao" class="btn btn-primary">Enviar</button>
                                     </form>
                                 </li>
                             </ul>

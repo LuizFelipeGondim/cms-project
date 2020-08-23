@@ -1,3 +1,11 @@
+<?php
+    $pdo = new PDO('mysql:host=localhost;dbname=projeto_1', 'root', '');
+    $sobre = $pdo->prepare("SELECT * FROM `tb_sobre`");
+    $sobre->execute();
+    $sobre = $sobre->fetch()['sobre'];
+    
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -98,24 +106,7 @@
             <h2>Conheça nossa empresa!</h2>
             <div class="container diferenciais-container">
                 <div class="row">
-                    <div class="col-md-4">
-                        <h3><!-- colocar ícone -->Diferencial #1</h3>
-                        <p>Praesent at nisi nunc. Curabitur mollis dolor eget aliquet tincidunt. Suspendisse 
-                            scelerisque felis turpis, vel commodo justo vestibulum ac. Nullam interdum congue 
-                            gravida. Pellentesque imperdiet sem vitae mauris pretium suscipit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h3><!-- colocar ícone -->Diferencial #2</h3>
-                        <p>Praesent at nisi nunc. Curabitur mollis dolor eget aliquet tincidunt. Suspendisse 
-                            scelerisque felis turpis, vel commodo justo vestibulum ac. Nullam interdum congue 
-                            gravida. Pellentesque imperdiet sem vitae mauris pretium suscipit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h3><!-- colocar ícone -->Diferencial #3</h3>
-                        <p>Praesent at nisi nunc. Curabitur mollis dolor eget aliquet tincidunt. Suspendisse 
-                            scelerisque felis turpis, vel commodo justo vestibulum ac. Nullam interdum congue 
-                            gravida. Pellentesque imperdiet sem vitae mauris pretium suscipit.</p>
-                    </div>
+                    <?php echo $sobre ?>
                 </div>
             </div>
         </section>
