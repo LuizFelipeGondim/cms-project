@@ -9,6 +9,10 @@
 <!doctype html>
 <html lang="en">
   <head>
+
+    <!-- Imagem da aba -->
+    <link rel="shortcut icon" href="projeto/images/logo.png" >
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,10 +22,13 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Projeto Dev Web</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Home</title>
+
   </head>
+
   <body>
+
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Danki Code</a>
@@ -35,10 +42,10 @@
                         <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../cms">Painel de controle</a>
+                        <a class="nav-link" href="cms">Painel de controle</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../cms/mensagens.php">Painel de mensagens</a>
+                        <a class="nav-link" href="cms/mensagens.php">Painel de mensagens</a>
                     </li>
                 </ul>
             </div>
@@ -60,7 +67,7 @@
         </section>
 
         <section class="depoimento text-center">
-            <h2><!-- colocar ícone de estrela --> Depoimento</h2>
+            <h2>Depoimento</h2>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -154,7 +161,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="container-balao">
-                            <img src="images/balao.svg" alt="Balão de conversa">
+                            <img src="assets/images/balao.svg" alt="Balão de conversa">
                         </div>
                     </div>
                 </div>

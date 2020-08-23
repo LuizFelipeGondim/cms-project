@@ -5,6 +5,9 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <!-- Imagem da aba -->
+        <link rel="shortcut icon" href="../projeto/images/logo.png" >
+
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,8 +17,8 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Painel de controle</title>
+        <link rel="stylesheet" href="../assets/css/cms.css">
+        <title>Painel de mensagens</title>
     </head>
 
     <body>
@@ -29,7 +32,7 @@
                 <div class="collapse navbar-collapse" id="navbarsExample07">
                     <ul id="menu-principal" class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a href="../projeto" class="nav-link color-white">Home</a> <!-- colocar ícone -->
+                            <a href="../" class="nav-link color-white">Home</a> <!-- colocar ícone -->
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.php" ref_sys="sobre">Painel de controle <span class="sr-only">(current)</span></a>
@@ -45,7 +48,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12"> <!-- colocar ícone de engrenagem -->
-                        <h2>Paniel de mensagens</h2>
+                        <h2>
+                            <img src="../assets/images/contact_mail-white-18dp.svg" class="icon">
+                            Paniel de mensagens
+                        </h2>
                     </div>
                 </div>
             </div>
