@@ -18,7 +18,7 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
-        <title>CMS</title>
+        <title>Painel de controle</title>
     </head>
 
     <body>
@@ -31,6 +31,9 @@
 
                 <div class="collapse navbar-collapse" id="navbarsExample07">
                     <ul id="menu-principal" class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a href="../projeto" class="nav-link color-white">Home</a> <!-- colocar ícone -->
+                        </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="#" ref_sys="sobre">Editar sobre <span class="sr-only">(current)</span></a>
                         </li>
@@ -41,36 +44,18 @@
                             <a class="nav-link" href="#" ref_sys="gerenciar_equipe">Gerenciar equipe</a>
                         </li>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="?sair" class="color-white">Sair</a> <!-- colocar ícone -->
-                        </li>
-                    </ul>
                 </div>
             </div>
         </nav>
         <header id="header">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-9"> <!-- colocar ícone de engrenagem -->
+                    <div class="col-md-12"> <!-- colocar ícone de engrenagem -->
                         <h2>Paniel de controle</h2>
-                    </div>
-                    <div class="col-md-3 ">
-                        <p>Seu último login foi em: 12/09/2019</p>
                     </div>
                 </div>
             </div>
         </header>
-
-        <section class="bread">
-            <div class="container">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#"></a>ddsg</li>
-                    <li class="breadcrumb-item active">dddd</li>
-                </ol>
-            </div>
-        </section>
 
         <section class="principal">
             <div class="container">

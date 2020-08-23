@@ -26,32 +26,19 @@
         <div class="container">
             <a class="navbar-brand" href="#">Danki Code</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarsExample07">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown07">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-md-0">
-                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-            </form>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../cms">Painel de controle</a>
+                    </li>
+                
+                </ul>
             </div>
         </div>
     </nav>
@@ -145,6 +132,20 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
+                        <?php if(isset($_POST['acao'])){
+                                $nome = $_POST['nome'];
+                                $email = $_POST['email'];
+                                $mensagem = $_POST['mensagem'];
+
+                                if($nome === '' || $email === '' || $mensagem === ''){
+                                    echo '<div class="alert alert-danger" role="alert"> Este(s) campo(s) não pode(m) ficar vazio(s)</div>';
+                                }else{
+                                    $sql = $pdo->prepare("INSERT INTO `tb_contato` VALUES (null,?,?,?)");
+                                    $sql->execute(array($nome, $email, $mensagem));
+                                    echo '<div class="alert alert-info" role="alert"> Mensagem enviada com sucesso</div>';
+                                }
+                            }
+                        ?>
                         <h2>Fale conosco</h2>
                         <form method="post">
                             <div class="form-group">
@@ -161,7 +162,7 @@
                                 <label for="mensagem">Mensagem: </label>
                                 <textarea name="mensagem" id="mensagem" cols="30" rows="10" class="form-control"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <button type="submit" name="acao" class="btn btn-primary">Enviar</button>
                         </form>
                     </div>
                     <div class="col-md-6">
