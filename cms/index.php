@@ -127,6 +127,20 @@
                             </ul>
                         </div>
 
+                        <?php if(isset($_POST['cadastrar-membro'])){
+                                $nome = $_POST['nome-membro'];
+                                $descricao = $_POST['descricao'];
+                                if($nome === '' || $descricao === ''){
+                                    echo '<div class="alert alert-danger" role="alert"> Este campo não pode ficar vazio</div>';
+                                }else{
+                                    $sql = $pdo->prepare("INSERT INTO `tb_equipe` VALUES (null,?,?)");
+                                    $sql->execute(array($nome, $descricao));
+                                    echo '<div class="alert alert-info" role="alert"> O membro foi 
+                                        cadastrado com sucesso</div>';
+                                }
+                            }
+                        ?>
+
                         <div class="card" style="width: 18rem;" id="cadastrar_equipe_section">
                             <div class="card-header bg-dark color-white">
                                 Cadastrar Equipe
@@ -136,13 +150,14 @@
                                     <form method="post" class="col-md-12">
                                         <div class="form-group">
                                             <label for="nome-membro">Nome do membro</label>
-                                            <input type="text" class="form-control" id="nome-membro">
+                                            <input type="text" class="form-control" id="nome-membro" name="nome-membro">
                                         </div>
                                         <div class="form-group">
-                                            <label for="textarea-desc">Descrição da equipe: </label>
-                                            <textarea name="" id="textarea-desc" class="form-control"></textarea>
+                                            <label for="descricao">Descrição da equipe: </label>
+                                            <textarea name="descricao" id="descricao" class="form-control"></textarea>
                                         </div>
-                                        <button type="submit" class="btn btn-primary">Enviar</button>
+                                        <input type="hidden" name="cadastrar-membro">
+                                        <button type="submit" name="acao" class="btn btn-primary">Enviar</button>
                                     </form>
                                 </li>
                             </ul>
@@ -164,11 +179,20 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <?php for($i = 0; $i < 5; $i++){ ?>
+                                                <?php     
+                                                    $selecionarMembros = $pdo->prepare("SELECT `id`,`nome` FROM `tb_equipe`");
+                                                    $selecionarMembros->execute();
+                                                    $membros = $selecionarMembros->fetchAll();
+                                                    foreach($membros as $key=>$value){ 
+                                                ?>
                                                     <tr>
-                                                        <th scope="row">1</th>
-                                                        <td>Mark</td>
-                                                        <td><button type="button" class="btn btn-danger">Excluir</button></td>
+                                                        <th scope="row"><? echo $value['id'] ?></th>
+                                                        <td><? echo $value['nome'] ?></td>
+                                                        <td>
+                                                            <button type="button" id_membro="<? echo $value['id'] ?>" class="deletar-membro btn btn-danger">
+                                                                Excluir
+                                                            </button>
+                                                        </td>
                                                     </tr>
                                                 <?php } ?>
                                             </tbody>
@@ -216,6 +240,21 @@
                         }
                     });
                 }
+
+                $('button.deletar-membro').click(function(){
+                    var id_membro = $(this).attr('id_membro');
+                    var el = $(this).parent().parent();
+                    $.ajax({
+                        method: 'post',
+                        data:{'id_membro':id_membro},
+                        url:'deletar.php'
+                    }).done(function(){
+                        el.fadeOut(function(){
+                            el.remove();
+                        });
+                    })
+                    
+                })
 
             })
         </script>

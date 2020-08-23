@@ -114,75 +114,29 @@
         <section class="equipe">
             <h2>Equipe</h2>
             <div class="container equipe-container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="equipe-single">
-                            <div class="col-md-12 equipe-top">
-                                <div class="user-picture">
-                                    <span class="material-icons icon-equipe">
-                                        account_circle
-                                    </span>
+                <div class="row width-100">
+                    <?php     
+                        $selecionarMembros = $pdo->prepare("SELECT `nome`,`descricao` FROM `tb_equipe`");
+                        $selecionarMembros->execute();
+                        $membros = $selecionarMembros->fetchAll();
+                        foreach($membros as $key=>$value){ 
+                    ?>
+                        <div class="col-md-6">
+                            <div class="equipe-single">
+                                <div class="col-md-12 equipe-top">
+                                    <div class="user-picture">
+                                        <span class="material-icons icon-equipe">
+                                            account_circle
+                                        </span>
+                                    </div>
+                                    <h3><? echo $value['nome'] ?></h3>
                                 </div>
-                                <h3>Luiz Felipe</h3>
-                            </div>
-                            <div class="col-md-12 content">
-                                <p>Praesent at nisi nunc. Curabitur mollis dolor eget aliquet tincidunt. Suspendisse 
-                                    scelerisque felis turpis, vel commodo justo vestibulum ac. Nullam interdum congue 
-                                    gravida. Pellentesque imperdiet sem vitae mauris pretium suscipit.</p>
+                                <div class="col-md-12 content">
+                                    <p><? echo $value['descricao'] ?></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="equipe-single">
-                            <div class="col-md-12 equipe-top">
-                                <div class="user-picture">
-                                    <span class="material-icons icon-equipe">
-                                        account_circle
-                                    </span>
-                                </div>
-                                <h3>Luiz Felipe</h3>
-                            </div>
-                            <div class="col-md-12 content">
-                                <p>Praesent at nisi nunc. Curabitur mollis dolor eget aliquet tincidunt. Suspendisse 
-                                    scelerisque felis turpis, vel commodo justo vestibulum ac. Nullam interdum congue 
-                                    gravida. Pellentesque imperdiet sem vitae mauris pretium suscipit.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="equipe-single">
-                            <div class="col-md-12 equipe-top">
-                                <div class="user-picture">
-                                    <span class="material-icons icon-equipe">
-                                        account_circle
-                                    </span>
-                                </div>
-                                <h3>Luiz Felipe</h3>
-                            </div>
-                            <div class="col-md-12 content">
-                                <p>Praesent at nisi nunc. Curabitur mollis dolor eget aliquet tincidunt. Suspendisse 
-                                    scelerisque felis turpis, vel commodo justo vestibulum ac. Nullam interdum congue 
-                                    gravida. Pellentesque imperdiet sem vitae mauris pretium suscipit.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="equipe-single">
-                            <div class="col-md-12 equipe-top">
-                                <div class="user-picture">
-                                    <span class="material-icons icon-equipe">
-                                        account_circle
-                                    </span>
-                                </div>
-                                <h3>Luiz Felipe</h3>
-                            </div>
-                            <div class="col-md-12 content">
-                                <p>Praesent at nisi nunc. Curabitur mollis dolor eget aliquet tincidunt. Suspendisse 
-                                    scelerisque felis turpis, vel commodo justo vestibulum ac. Nullam interdum congue 
-                                    gravida. Pellentesque imperdiet sem vitae mauris pretium suscipit.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <? } ?>
                 </div>
             </div>
         </section>
