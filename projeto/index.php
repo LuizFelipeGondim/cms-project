@@ -37,7 +37,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../cms">Painel de controle</a>
                     </li>
-                
+                    <li class="nav-item">
+                        <a class="nav-link" href="../cms/mensagens.php">Painel de mensagens</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -51,32 +53,17 @@
                     <div class="col-md-12 text-center">
                         <h2> <? echo htmlentities('<') ?>Danki.Code<? echo htmlentities('>') ?></h2>
                         <p>Empresa voltada para desenvolvimento web e marketing digital</p>
-                        <a href="#">Saiba Mais!</a>
+                        <a href="#" id="saiba_mais" >Saiba Mais!</a>
                     </div><!-- col-md-12 -->
                 </div><!-- row -->
             </div><!-- container -->
         </section>
 
-        <section class="cadastro-lead">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-md-6">
-                        <h2> <span class="glyphicon glyphicon-start"></span><!-- colocar ícone de estrela --> Entre em nossa lista!</h2>
-                    </div>
-                    <div class="col-md-6">
-                        <form method="post">
-                            <input type="text" name="nome"><input type="submit" value="Enviar">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section class="depoimento text-center">
+            <h2><!-- colocar ícone de estrela --> Depoimento</h2>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2>Depoimento</h2>
                         <blockquote>
                             Praesent at nisi nunc. Curabitur mollis dolor eget aliquet tincidunt. Suspendisse 
                             scelerisque felis turpis, vel commodo justo vestibulum ac. Nullam interdum congue 
@@ -166,23 +153,9 @@
                         </form>
                     </div>
                     <div class="col-md-6">
-                        <h2>Nossos planos</h2>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>Plano Diário</th>
-                                    <th>Plano Semanal</th>
-                                    <th>Plano Anual</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>R$199,00</td>
-                                    <td>R$299,00</td>
-                                    <td>R$399,00</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="container-balao">
+                            <img src="images/balao.svg" alt="Balão de conversa">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -198,5 +171,21 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+            $(function(){
+
+                clickSaibaMais();
+
+                function clickSaibaMais(){
+                    $('#saiba_mais').click(function(){
+                        alert('Não vou fazer propaganda de graça :)');
+                        return false;
+                    })
+                }
+
+            })
+        </script>
   </body>
 </html>

@@ -73,48 +73,22 @@ section.banner > .container{
 
 /*------------------*/
 
-section.cadastro-lead{
-    background-color: #26a599;
-    padding: 20px 0px;
-}
-
-section.cadastro-lead h2{
-    color: #ffffff;
-    font-size: 24px;
-    margin-top: 5px !important;
-}
-
-section.cadastro-lead form{
-    top: 10px;
-}
-
-section.cadastro-lead input[type=text]{
-    width:80%;
-    height: 40px;
-    padding-left: 8px;
-    border: 1px solid #ccc;
-}
-
-section.cadastro-lead input[type=submit]{
-    width: 20%;
-    height: 40px;
-    border: 1px solid #ccc;
-    margin-top: -5px;
-}
-
-/*------------------*/
 
 section.depoimento h2{
-    color: #4b4b4b;
+    color: #ffffff;
+    font-size: 24px;
+    background-color: #26a599;
+    padding: 20px 0px;
 }
 
 section.depoimento blockquote{
     color: #4b4b4b;
     font-size: 16px;
+    margin-top: 20px;
 }
 
 section.depoimento{
-    padding: 40px 0px;
+    padding-bottom: 30px;
 }
 
 /*------------------*/
@@ -204,6 +178,19 @@ section.final-page form{
     margin-bottom: 30px;
 }
 
+section.final-page .container-balao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 450px;
+}
+
+section.final-page .container-balao img{
+    width: 350px;
+    height: 350px;
+}
+
 /*--------------------*/
 
 footer{
@@ -220,5 +207,18 @@ footer p{
 {
     .equipe-container .row{
         margin: 0px ;
+    }
+}
+
+@media (max-width: 1000px) 
+{
+    section.final-page .container-balao{
+        display: none;
+    }
+
+    section.final-page .col-md-6{
+        width: 100% !important;
+        flex: none;
+        max-width: 100%;
     }
 }

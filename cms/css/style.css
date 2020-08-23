@@ -16,7 +16,9 @@ a{
     color: #fff !important;
 }
 
-
+.navbar-brand{
+    font-size: 23px !important;
+}
 /*-----------------*/
 
 header#header{
