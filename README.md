@@ -17,4 +17,4 @@ Este projeto é exemplo básico de uma aplicação CMS (Content Management Syste
 ```
 
 ---
-Feito por Luiz Felipe Gondim
+Feito por Luiz Felipe Gondim.
