@@ -181,18 +181,18 @@
 
     <script type="text/javascript">
 
-            $(function(){
+        $(function(){
 
-                clickSaibaMais();
+            clickSaibaMais();
 
-                function clickSaibaMais(){
-                    $('#saiba_mais').click(function(){
-                        alert('Não vou fazer propaganda de graça :)');
-                        return false;
-                    })
-                }
+            function clickSaibaMais(){
+                $('#saiba_mais').click(function(){
+                    alert('Não vou fazer propaganda de graça :)');
+                    return false;
+                })
+            }
 
-            })
-        </script>
-  </body>
+        })
+    </script>
+    </body>
 </html>
