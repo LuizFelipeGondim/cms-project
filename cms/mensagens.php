@@ -50,7 +50,7 @@
                     <div class="col-md-12"> <!-- colocar ícone de engrenagem -->
                         <h2>
                             <img src="../assets/images/contact_mail-white-18dp.svg" class="icon">
-                            Paniel de mensagens
+                            Painel de mensagens
                         </h2>
                     </div>
                 </div>
@@ -69,12 +69,12 @@
                         ?>
                             <div class="card" style="width: 18rem;" id="gerenciar_equipe_section">
                                 <div class="card-header bg-dark color-white">
-                                    <? echo $value['nome'] ?>
+                                    <?php echo $value['nome'] ?>
                                 </div>
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
-                                        E-mail: <? echo $value['email'] ?> <hr/>
-                                        Mensagem: <? echo $value['mensagem'] ?>
+                                        E-mail: <?php echo $value['email'] ?> <hr/>
+                                        Mensagem: <?php echo $value['mensagem'] ?>
                                     </li>
                                 </ul>
                             </div>                                    
