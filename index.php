@@ -58,7 +58,7 @@
             <div class="container chamada-banner">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h2> <? echo htmlentities('<') ?>Danki.Code<? echo htmlentities('>') ?></h2>
+                        <h2> <?php echo htmlentities('<') ?>Danki.Code<?php echo htmlentities('>') ?></h2>
                         <p>Empresa voltada para desenvolvimento web e marketing digital</p>
                         <a href="#" id="saiba_mais" >Saiba Mais!</a>
                     </div><!-- col-md-12 -->
@@ -110,10 +110,10 @@
                                             account_circle
                                         </span>
                                     </div>
-                                    <h3><? echo $value['nome'] ?></h3>
+                                    <h3><?php echo $value['nome'] ?></h3>
                                 </div>
                                 <div class="col-md-12 content">
-                                    <p><? echo $value['descricao'] ?></p>
+                                    <p><?php echo $value['descricao'] ?></p>
                                 </div>
                             </div>
                         </div>
