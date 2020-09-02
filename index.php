@@ -117,7 +117,7 @@
                                 </div>
                             </div>
                         </div>
-                    <? } ?>
+                    <?php } ?>
                 </div>
             </div>
         </section>
