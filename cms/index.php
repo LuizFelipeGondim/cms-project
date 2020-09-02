@@ -60,7 +60,7 @@
                     <div class="col-md-12"> 
                         <h2> 
                             <img src="../assets/images/app_settings_alt-white-18dp.svg" class="icon"> 
-                            Paniel de controle
+                            Painel de controle
                         </h2>
                     </div>
                 </div>
@@ -181,10 +181,10 @@
                                                     foreach($membros as $key=>$value){ 
                                                 ?>
                                                     <tr>
-                                                        <th scope="row"><? echo $value['id'] ?></th>
-                                                        <td><? echo $value['nome'] ?></td>
+                                                        <th scope="row"><?php echo $value['id'] ?></th>
+                                                        <td><?php echo $value['nome'] ?></td>
                                                         <td>
-                                                            <button type="button" id_membro="<? echo $value['id'] ?>" class="deletar-membro btn btn-danger">
+                                                            <button type="button" id_membro="<?php echo $value['id'] ?>" class="deletar-membro btn btn-danger">
                                                                 Excluir
                                                             </button>
                                                         </td>
